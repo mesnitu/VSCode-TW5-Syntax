@@ -8,6 +8,8 @@
     It is completely unknown
   <% endif %>
 <% endif %>
+
+<<__test__>>
 \end
 
 <<test "Giraffe">>
