@@ -4,6 +4,12 @@ All notable changes to the "tw5-syntax" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.0.2
+- fix 
+
+## 2.0.1
+- fix README
+
 ## 2.0.0
 - Full re-write to model tiddlywiki5 wikitext as a `text.html.derivative` style sytanx.
 - Updated syntax json version to current Tiddlywiki5 v`5.3.4`.
