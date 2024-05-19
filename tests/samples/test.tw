@@ -21,3 +21,5 @@
 {{{ [[Hi, I'm $(name)$ and I live in $(address)$]substitute[]] }}}
 
 {{{ [[Something in the $(time)$ at $2$ about $1$ ]substitute[Maths],[the Library]] }}}
+
+{{{ [[$mode]is[variable]then<$mode>!is[blank]] :else[[mode]is[variable]then<mode>!is[blank]] :else[<@parseMode>] }}}
