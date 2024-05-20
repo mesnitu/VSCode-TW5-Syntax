@@ -5,7 +5,27 @@ All notable changes to the "tw5-syntax" extension will be documented in this fil
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## 2.0.2
-- fix 
+- Merge `snippets/snippets.json` fixes from @pmario. Mahalo/Thanks!!!!!
+  - `<% if` //fix conditional if and add if elseif else if full structure #17
+  - `tid` //add additional new-line before final input cursor #18
+  - Pragma snippets //remove \end <name>, because it is inconvenient #19
+  - `\rulesstyle` pragma //add fnprocdef to rulestyle definition snippet #20
+  - `\whitespace` pragma //fix the whitespace pragma #21
+  - Filtered transclusions //add 1 leading and trailling space between filter and braces for better readability #22
+  - Transclusions //fix trt and tit snippet shortcuts #23
+  - `|tablerc` //replace tabs with spaces in tablerc #24
+  - //make sup, sub and inline code snippets more reachable with non english keyboard layouts #25
+  - //call macros with named parameters for best practice #26
+  - //fix the list-links macro and add list-links-draggable #27
+  - //tocs use named params for best practice #28
+  - //fix macrocall, set, vars and let-widget #29
+  - //fix list, listv and add listz with all parameters #30
+  - //adjust view- and revealwidget #31
+  - //adjust scrollable, edit-text and select widget #32
+  - //adjust checkbox and radio snippets #33
+  - //adjust button snippets, add Button Actions procedure for best practice #34
+  - //adjust action-widgets and make aciton-deletetiddler safe #35
+  - //adjust substitutions #36
 
 ## 2.0.1
 - fix README

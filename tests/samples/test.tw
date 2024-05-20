@@ -18,8 +18,25 @@
 
 <<test "Antelope">>
 
-{{{ [[Hi, I'm $(name)$ and I live in $(address)$]substitute[]] }}}
+{{{ 
 
-{{{ [[Something in the $(time)$ at $2$ about $1$ ]substitute[Maths],[the Library]] }}}
+  +[[Hi, I'm $(name)$ and I live in $(address)$]substitute[]] 
+  -[[Hi, I'm $(name)$ and I live in $(address)$]substitute[]]
+  ~[[Hi, I'm $(name)$ and I live in $(address)$]substitute[]]
+  =[[Hi, I'm $(name)$ and I live in $(address)$]substitute[]]
+  +"Test"
+  -"Test"
+  ~"Test"
+  ="Test"
+  :anything"Test"
+  +'Tes'
+  -'Test'
+  ~'Test'
+  ='Test'
+  :anything'Test'
+
+}}}
+
+{{{ [[Something in the $(time)$ at $2$ about $1$ ]substitute[Maths],[the Library]]  :anything[[test]]  :test["Not Legal"] "test" }}}
 
 {{{ [[$mode]is[variable]then<$mode>!is[blank]] :else[[mode]is[variable]then<mode>!is[blank]] :else[<@parseMode>] }}}
