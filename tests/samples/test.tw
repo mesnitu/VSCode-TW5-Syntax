@@ -1,4 +1,5 @@
-\procedure test(animal)
+\function __testFunction() [<itemTemplate>!is[blank]then[text]]
+\procedure __test(animal, __plant)
 <% if [<animal>match[Elephant]] %>
   It is an elephant
 <% else %>
