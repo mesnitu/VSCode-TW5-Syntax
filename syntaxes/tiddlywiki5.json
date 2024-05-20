@@ -4752,7 +4752,7 @@
           "patterns": [
             {
               "comment": "Match bracketed filter run.",
-              "begin": "((?:[^\\[\"']+)?\\[)",
+              "begin": "((?:\\+|\\-|~|=|:[^\\[\"']+)?\\[)",
               "end": "(\\])",
               "name": "meta.filter.run.tiddlywiki5",
               "contentName": "entity.filter.operator.title.tiddlywiki5",
@@ -4844,7 +4844,7 @@
             },
             {
 				"comment": "Match double-quoted filter run.",
-				"begin": "([^\\[\"']+)?(?=\")",
+				"begin": "(\\+|\\-|~|=|:[^\\[\"']+)?(?=\")",
 				"end": "(?<=\")",
 				"name": "meta.filter.run.tiddlywiki5",
 				"contentName": "entity.filter.operator.title.tiddlywiki5",
@@ -4864,7 +4864,7 @@
             },
             {
 				"comment": "Match single-quoted filter run.",
-				"begin": "([^\\[\"']+)?(?=')",
+				"begin": "(\\+|\\-|~|=|:[^\\[\"']+)?(?=')",
 				"end": "(?<=')",
 				"name": "meta.filter.run.tiddlywiki5",
 				"contentName": "entity.filter.operator.title.tiddlywiki5",
