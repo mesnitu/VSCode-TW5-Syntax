@@ -107,15 +107,15 @@
 		},
 		"Transclusion With Template": {
 			"prefix": "{{trt",
-			"body": "{{${1:tiddler}||${2:template}}$0"
+			"body": "{{${1:tiddler}||${2:template}}}$0"
 		},
 		"Transclusion Of Field With Template": {
 			"prefix": "{{tft",
-			"body": "{{${1:}!!${2:title}||${3:template}}$0"
+			"body": "{{${1:}!!${2:title}||${3:template}}}$0"
 		},
 		"Transclusion Of Data Index With Template": {
 			"prefix": "{{tit",
-			"body": "{{${1:}##${2:index}||${3:template}}$0"
+			"body": "{{${1:}##${2:index}||${3:template}}}$0"
 		},
 		"Table": {
 			"prefix": "|table",
