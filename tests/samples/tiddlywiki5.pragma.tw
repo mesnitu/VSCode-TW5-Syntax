@@ -80,3 +80,18 @@ This is the widget, and the attribute is <<attribute>>.
 
 This is the widget, and the attribute is <<attribute>>.
 \end
+
+\define macroName (param: "default")
+$param$ $(extVar)$ $:/core/system/tiddler/title
+\end
+
+\define special-button(caption:"Click me")
+\define actions()
+<$action-sendmessage $message="tm-notify" $param="HelloThere"/>
+\end actions
+<$button actions=<<actions>>>
+$caption$
+</$button>
+\end special-button
+
+<<special-button>>
