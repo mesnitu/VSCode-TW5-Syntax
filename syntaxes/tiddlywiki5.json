@@ -1038,7 +1038,7 @@
 		"htmlwidget-math": {
 			"patterns": [
 				{
-				"begin": "(?i)(<)(math)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)(>))?",
+				"begin": "(?i)(<)(math)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)((?<!>)>(?!>)))?",
 				"beginCaptures": {
 					"0": {
 					"name": "meta.tag.structure.$2.start.html.tiddlywiki5"
@@ -1172,7 +1172,7 @@
 					"name": "meta.element.structure.math.$2.html.tiddlywiki5"
 					},
 					{
-					"begin": "(?i)(<)(annotation|annotation-xml|semantics|menclose|merror|mfenced|mfrac|mpadded|mphantom|mroot|mrow|msqrt|mstyle|mmultiscripts|mover|mprescripts|msub|msubsup|msup|munder|munderover|none|mlabeledtr|mtable|mtd|mtr|mlongdiv|mscarries|mscarry|msgroup|msline|msrow|mstack|maction)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)(>))?",
+					"begin": "(?i)(<)(annotation|annotation-xml|semantics|menclose|merror|mfenced|mfrac|mpadded|mphantom|mroot|mrow|msqrt|mstyle|mmultiscripts|mover|mprescripts|msub|msubsup|msup|munder|munderover|none|mlabeledtr|mtable|mtd|mtr|mlongdiv|mscarries|mscarry|msgroup|msline|msrow|mstack|maction)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)((?<!>)>(?!>)))?",
 					"beginCaptures": {
 						"0": {
 						"name": "meta.tag.structure.math.$2.start.html.tiddlywiki5"
@@ -1260,7 +1260,7 @@
 					"name": "meta.element.inline.math.$2.html.tiddlywiki5"
 					},
 					{
-					"begin": "(?i)(<)(mi|mn|mo|ms|mspace|mtext|maligngroup|malignmark)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)(>))?",
+					"begin": "(?i)(<)(mi|mn|mo|ms|mspace|mtext|maligngroup|malignmark)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)((?<!>)>(?!>)))?",
 					"beginCaptures": {
 						"0": {
 						"name": "meta.tag.inline.math.$2.start.html.tiddlywiki5"
@@ -1348,7 +1348,7 @@
 					"name": "meta.element.object.math.$2.html.tiddlywiki5"
 					},
 					{
-					"begin": "(?i)(<)(mglyph)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)(>))?",
+					"begin": "(?i)(<)(mglyph)(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)((?<!>)>(?!>)))?",
 					"beginCaptures": {
 						"0": {
 						"name": "meta.tag.object.math.$2.start.html.tiddlywiki5"
@@ -1439,7 +1439,7 @@
 					"name": "meta.element.other.invalid.html.tiddlywiki5"
 					},
 					{
-					"begin": "(?i)(<)((\\w[^\\s>]*))(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)(>))?",
+					"begin": "(?i)(<)((\\w[^\\s>]*))(?=\\s|/?>)(?:(([^\"'>]|\"[^\"]*\"|'[^']*')*)((?<!>)>(?!>)))?",
 					"beginCaptures": {
 						"0": {
 						"name": "meta.tag.other.invalid.start.html.tiddlywiki5"
@@ -1509,6 +1509,9 @@
 					},
 					{
 					"include": "#htmlwidget-tags-invalid"
+					},
+					{
+					"include": "#inline"
 					}
 				]
 				}
@@ -2173,6 +2176,9 @@
 				},
 				{
 				"include": "#htmlwidget-tags-invalid"
+				},
+				{
+				"include": "#inline"
 				}
 			]
 			}
@@ -4277,7 +4283,7 @@
             {
               "begin": "~~",
               "end": "~~",
-              "contentName": "markup.strikethrough.tiddlywiki5",
+              "contentName": "markup.underline.strikethrough.tiddlywiki5",
               "beginCaptures": {
                 "0": {
                   "name": "strikethrough.punctuation.definition.markup.begin.tiddlywiki5"

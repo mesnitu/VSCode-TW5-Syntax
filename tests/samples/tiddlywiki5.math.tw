@@ -21,6 +21,25 @@
 
 <p>
   The infinite sum
+
+Paragraph text with a few [[Title Links]] and [[References]]...
+
+<<variable>>
+{{transclusion}}
+[[wiki-link]]
+
+: test
+; this
+
+"""
+TEST TEXT 
+BLOCK <$transclude tiddler="test"/>
+"""
+
+<<variable>>
+{{transclusion}}
+[[wiki-link]]
+
   <math display=<<"block">>>
     <mrow>
       <munderover>
@@ -38,7 +57,7 @@
       <mfrac>
         <mn>1</mn>
         <msup>
-          <mi>n</mi>
+          <mi>n Paragraph ''text'' with //a few// [[X]] ~~and~~ [[Y]]...</mi>
           <mn>2</mn>
         </msup>
       </mfrac>
@@ -48,9 +67,10 @@
   <math display=<<"inline">>>
     <mfrac>
       <msup>
-        <mi>π</mi>
+        <mi>π Paragraph text with a few [[Title Links]] and [[References]]... </mi>
         <mn>2</mn>
       </msup>
       <mn>6</mn>
-    </mfrac></math>.
+    </mfrac>
+      <annotation display=<<"inline">>></annotation></math>.
 </p>
