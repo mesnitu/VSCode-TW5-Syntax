@@ -34,6 +34,16 @@
     "contributes": {
         "languages": [
             {
+                "id": "json",
+                "extensions": [
+                  ".info", ".files"
+                ],
+                "aliases": [
+                  "Tiddlywiki5 Json",
+                  "tiddlywiki5-json"
+                ]
+            },
+            {
                 "id": "tiddlywiki5.test",
                 "aliases": [
                     "Tiddlywiki Test",
@@ -84,7 +94,7 @@
             {
                 "id": "tiddlywiki5",
                 "aliases": [
-                    "TiddlyWiki5",
+                    "Tiddlywiki5",
                     "tiddlywiki5",
                     "tw5"
                 ],

@@ -6,6 +6,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## 2.0.5
 - Fix wikitext parsing in `<style>` tags. //Style tags do not parse wikitext #42
+- Add a `constributes/languages` object for 'json', maps `".info", ".files"` extensions to Json language features as "Tiddlywiki5 Json".
 
 ## 2.0.4
 - Version bump to fix publishing bug.
