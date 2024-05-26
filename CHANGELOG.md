@@ -4,6 +4,9 @@ All notable changes to the "tw5-syntax" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.0.5
+- Fix wikitext parsing in `<style>` tags. //Style tags do not parse wikitext #42
+
 ## 2.0.4
 - Version bump to fix publishing bug.
 
