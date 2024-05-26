@@ -5,7 +5,7 @@ All notable changes to the "tw5-syntax" extension will be documented in this fil
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## 2.0.5
-- Fix wikitext parsing in `<style>` tags. //Style tags do not parse wikitext #42
+- Cannot inject wikitext parsing into `<style>` tags. Closed as won't-fix. //Style tags do not parse wikitext #42
 - Add a `constributes/languages` object for 'json', maps `".info", ".files"` extensions to Json language features as "Tiddlywiki5 Json".
 
 ## 2.0.4
