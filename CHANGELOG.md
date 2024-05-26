@@ -4,12 +4,14 @@ All notable changes to the "tw5-syntax" extension will be documented in this fil
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## 2.0.4
+- Version bump to fix publishing bug.
+
 ## 2.0.3
 - Fixed parsing bug with tiddlywiki style attributes in `svg` tags.
 - Fixed parsing bug with tiddlywiki style attributes in `math` tags.
 - Added #inline parsing to contents of SVG and Math tags.
 - Underline decoration on `~~strikethrough~~` syntax.
-
 
 ## 2.0.2
 - Merge `snippets/snippets.json` fixes from @pmario. Mahalo/Thanks!!!!!
