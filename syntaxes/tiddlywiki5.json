@@ -162,7 +162,7 @@
 		]
 		},
 		"define": {
-			"begin": "^(\\\\)(define)\\s+([^\\s\\$\\(]+)(?=\\s*\\()",
+			"begin": "^\\s*(\\\\)(define)\\s+([^\\s\\$\\(]+)(?=\\s*\\()",
 			"end": "^",
 			"name": "meta.directive.variable.macro.tiddlywiki5",
 			"beginCaptures": {
@@ -218,7 +218,7 @@
 		"patterns": [
 			{
 			"comment": "Single and Multi-line function definition",
-			"begin": "^(\\\\)(function)\\s+([^\\s\\$\\(]+)(?=\\s*\\()",
+			"begin": "^\\s*(\\\\)(function)\\s+([^\\s\\$\\(]+)(?=\\s*\\()",
 			"end": "^",
 			"name": "meta.directive.variable.function.tiddlywiki5",
 			"beginCaptures": {
@@ -261,7 +261,7 @@
 		]
 		},
 		"import": {
-		"match": "^(\\\\)(import)\\s+(.*)$",
+		"match": "^\\s*(\\\\)(import)\\s+(.*)$",
 		"name": "meta.directive.import.tiddlywiki5",
 		"captures": {
 			"1": { "name": "punctuation.definition.directive.tiddlywiki5" },
@@ -273,7 +273,7 @@
 		}
 		},
 		"parameters": {
-		"begin": "^(\\\\)(parameters)\\s*(\\()",
+		"begin": "^\\s*(\\\\)(parameters)\\s*(\\()",
 		"beginCaptures": {
 			"1": { "name": "punctuation.definition.directive.tiddlywiki5" },
 			"2": { "name": "keyword.control.directive.parameters.tiddlywiki5" },
@@ -311,7 +311,7 @@
 		"patterns": [
 			{
 			"comment": "Single and Multi-line procedure definition",
-			"begin": "^(\\\\)(procedure)\\s+([^\\s\\$\\(]+)(?=\\s*\\()",
+			"begin": "^\\s*(\\\\)(procedure)\\s+([^\\s\\$\\(]+)(?=\\s*\\()",
 			"end": "^",
 			"name": "meta.directive.variable.procedure.tiddlywiki5",
 			"beginCaptures": {
@@ -366,7 +366,7 @@
 		]
 		},
 		"rules": {
-		"match": "^(\\\\)(rules)\\s+(only|except)?(.*)$",
+		"match": "^\\s*(\\\\)(rules)\\s+(only|except)?(.*)$",
 		"name": "meta.directive.rules.tiddlywiki5",
 		"captures": {
 			"1": { "name": "punctuation.definition.directive.tiddlywiki5" },
@@ -378,7 +378,7 @@
 		}
 		},
 		"whitespace": {
-		"match": "^(\\\\)(whitespace)\\s+(trim|notrim)?$",
+		"match": "^\\s*(\\\\)(whitespace)\\s+(trim|notrim)?$",
 		"name": "meta.directive.whitespace.tiddlywiki5",
 		"captures": {
 			"1": { "name": "punctuation.definition.directive.tiddlywiki5" },
@@ -390,7 +390,7 @@
 		"patterns": [
 			{
 			"comment": "Single and Multi-line widget definition",
-			"begin": "^(\\\\)(widget)\\s+((\\$)(?!:\\/)[^\\s\\(]+)(?=\\s*\\()",
+			"begin": "^\\s*(\\\\)(widget)\\s+((\\$)(?!:\\/)[^\\s\\(]+)(?=\\s*\\()",
 			"end": "^",
 			"name": "meta.directive.variable.widget.tiddlywiki5",
 			"beginCaptures": {
